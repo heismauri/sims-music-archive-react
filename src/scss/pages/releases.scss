@@ -1,0 +1,29 @@
+#release {
+  @media (min-width: 768px) {
+    .release__tracklist-area ul {
+      column-count: 2;
+      column-gap: 2rem;
+    }
+  }
+
+  .release__tracklist-selector label {
+    display: inline-block;
+    color: $gray;
+    cursor: pointer;
+    border: 0.125rem solid transparent;
+    border-radius: 1.5rem;
+    border-style: dashed;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+
+    &:hover {
+      color: $gray !important;
+      background-color: $white;
+    }
+  }
+
+  .release__tracklist-selector input:checked + label {
+    color: $white;
+    border-color: $white;
+    border-style: solid;
+  }
+}

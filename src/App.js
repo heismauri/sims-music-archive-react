@@ -1,8 +1,9 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 
-import './App.css';
+import './App.scss';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import Home from './pages/Home';
 import Release from './pages/Release';
 import Releases from './pages/Releases';
@@ -10,7 +11,7 @@ import NotFound from './pages/NotFound';
 
 const App = () => {
   return (
-    <div>
+    <>
       <Navbar />
       <div className="container">
         <Routes>
@@ -22,7 +23,8 @@ const App = () => {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
-    </div>
+      <Footer />
+    </>
   );
 };
 
