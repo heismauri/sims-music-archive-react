@@ -1,4 +1,16 @@
 #release {
+  .release__content p:last-child {
+    margin-bottom: 0;
+  }
+
+  iframe {
+    height: 9rem;
+    background-image: url('../../assets/loader.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 6.25rem;
+  }
+
   @media (min-width: 768px) {
     .release__tracklist-area ul {
       column-count: 2;

@@ -1,0 +1,9 @@
+#root {
+  min-height: 100vh;
+  padding-bottom: 6rem;
+  position: relative;
+
+  @media (min-width: 576px) {
+    padding-bottom: 4.5rem;
+  }
+}

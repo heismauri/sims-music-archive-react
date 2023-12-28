@@ -19,6 +19,17 @@ const releasesData = [
                 We would like to thank our generous anonymous donor for providing us with the resources to make this
                 release possible.
               </p>`,
+    links: [
+      {
+        url: 'https://archive.org/compress/urbz-handheld-ost/formats=24BIT%20FLAC&file=/urbz-handheld-ost.zip',
+        name: 'FLAC 24bit 48khz'
+      },
+      {
+        url: 'https://archive.org/compress/urbz-handheld-ost/formats=VBR%20MP3&file=/urbz-handheld-ost.zip',
+        name: 'MP3 V0 VBR'
+      }
+    ],
+    iframe: 'https://archive.org/embed/urbz-handheld-ost&playlist=1&list_height=720',
     discs: [
       [
         'Title',
