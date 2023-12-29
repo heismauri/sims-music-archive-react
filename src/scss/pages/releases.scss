@@ -39,3 +39,25 @@
     border-style: solid;
   }
 }
+
+#releases {
+  .release__card {
+    color: $black;
+    background-color: $light-gray;
+    transition: all 0.2s ease-in-out;
+
+    img {
+      border: transparent 2px solid;
+      transition: all 0.2s ease-in-out;
+    }
+
+    &:hover {
+      color: $white;
+      background-color: $black;
+
+      img {
+        border-color: $white;
+      }
+    }
+  }
+}

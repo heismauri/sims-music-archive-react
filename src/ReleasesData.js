@@ -1,6 +1,5 @@
 const releasesData = [
   {
-    id: 1,
     slug: 'urbz-sims-in-the-city-handheld',
     title: 'The Urbz: Sims in the City ~Handheld Version~ (Original Soundtrack)',
     artists: [

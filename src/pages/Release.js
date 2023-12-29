@@ -20,7 +20,7 @@ const Release = () => {
       <div className="row gx-3 row-gap-3 mb-5">
         <div className="release__artwork col-md-6 order-md-1 mb-4 mb-md-0">
           <div className="rounded-5 overflow-hidden">
-            <img src={`/images/albums/${release.slug}.png`} alt={release.title} className="w-100" />
+            <img src={`/images/albums/${release.slug}.png`} alt={`${release.title} artwork`} />
           </div>
         </div>
         <div className="release__information col-md-6 order-md-0">
