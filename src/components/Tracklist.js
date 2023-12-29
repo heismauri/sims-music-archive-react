@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import PropTypes from 'prop-types';
 
 const leadingZero = (num, places = 2) => String(num).padStart(places, '0');
 
@@ -49,10 +48,6 @@ const Tracklist = ({ discs }) => {
       </div>
     </div>
   );
-};
-
-Tracklist.propTypes = {
-  discs: PropTypes.array.isRequired,
 };
 
 export default Tracklist;

@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import { ReactComponent as DownloadIcon } from '../assets/download-icon.svg';
 
@@ -15,10 +14,6 @@ const ReleaseLink = ({ link }) => {
       </div>
     </a>
   );
-};
-
-ReleaseLink.propTypes = {
-  link: PropTypes.object.isRequired
 };
 
 export default ReleaseLink;
