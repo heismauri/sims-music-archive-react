@@ -21,7 +21,7 @@ const Release = () => {
       <SEO title={release.title} image={`/images/albums/${release.slug}.png`} />
       <div className="row gx-3 row-gap-3 mb-5">
         <div className="release__artwork col-md-6 order-md-1 mb-4 mb-md-0">
-          <div className="rounded-5 overflow-hidden">
+          <div className="rounded-5 overflow-hidden fade-in-up">
             <img src={`/images/albums/${release.slug}.png`} alt={`${release.title} artwork`} />
           </div>
         </div>

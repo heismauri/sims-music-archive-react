@@ -2,18 +2,3 @@
   height: 40vmin;
   pointer-events: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .not-found-vinyl {
-    animation: not-found-vinyl-spin infinite 20s linear;
-  }
-}
-
-@keyframes not-found-vinyl-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
