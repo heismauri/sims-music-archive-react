@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import SEO from '../utils/SEO';
 import releasesData from '../ReleasesData';
 import ArtistName from '../utils/ArtistName';
 
@@ -9,6 +10,7 @@ const Releases = () => {
 
   return (
     <div id="releases">
+      <SEO title="Releases" />
       <h1>Releases</h1>
       <p>
         Here is an up to date list of all of our music releases so far. We are currently working on a number of custom

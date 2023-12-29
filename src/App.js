@@ -1,5 +1,6 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
 
 import './App.scss';
 import Navbar from './components/Navbar';
@@ -11,7 +12,7 @@ import NotFound from './pages/NotFound';
 
 const App = () => {
   return (
-    <>
+    <HelmetProvider>
       <Navbar />
       <div className="container">
         <Routes>
@@ -24,7 +25,7 @@ const App = () => {
         </Routes>
       </div>
       <Footer />
-    </>
+    </HelmetProvider>
   );
 };
 
