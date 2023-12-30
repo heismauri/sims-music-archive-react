@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 
+import 'bootstrap/dist/js/bootstrap.bundle';
 import './App.scss';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
