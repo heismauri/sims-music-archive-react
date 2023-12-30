@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import SEO from '../utils/SEO';
-import releasesData from '../ReleasesData';
+import { releasesData } from '../SMAData';
 import ArtistName from '../utils/ArtistName';
 
 const Releases = () => {

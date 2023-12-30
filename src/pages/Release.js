@@ -8,7 +8,7 @@ import ArtistName from '../utils/ArtistName';
 import Tracklist from '../components/Tracklist';
 import ReleaseLink from '../components/ReleaseLink';
 
-import releasesData from '../ReleasesData';
+import { releasesData } from '../SMAData';
 
 const Release = () => {
   const { slug } = useParams();
