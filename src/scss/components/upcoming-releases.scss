@@ -1,0 +1,13 @@
+#upcoming-releases {
+  .upcoming-release__card {
+    h5 {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .progress {
+      background-color: #E1E0E0 !important;
+    }
+  }
+}

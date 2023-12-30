@@ -6,8 +6,6 @@ import { releasesData } from '../SMAData';
 import ArtistName from '../utils/ArtistName';
 
 const Releases = () => {
-  const releases = releasesData;
-
   return (
     <div id="releases">
       <SEO title="Releases" />
@@ -17,7 +15,7 @@ const Releases = () => {
         soundtracks which we will release publicly as soon as they are complete.
       </p>
       <div className="row row-gap-3 gx-3">
-        {releases.map((release, index) => (
+        {[...releasesData].reverse().map((release, index) => (
           <Link to={release.slug} key={index} className="col-12 col-md-6 text-decoration-none">
             <div className="release__card d-flex p-4 gap-3 rounded-5 align-items-center">
               <img src={`/images/albums/${release.slug}.png`} width="150" alt={release.title} className="rounded-2" />

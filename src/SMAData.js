@@ -132,7 +132,7 @@ const releasesData = [
       ]
     ]
   }
-].reverse();
+];
 
 const upcomingReleasesData = [
   {
