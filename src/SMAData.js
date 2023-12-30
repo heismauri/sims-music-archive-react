@@ -91,7 +91,68 @@ const releasesData = [
         'Mission Complete (Jingle)'
       ]
     ]
+  },
+  {
+    slug: 'sims-two-pre-release-sampler',
+    title: 'The Sims 2 Pre-Release Sampler Soundtrack',
+    artists: [
+      'Jerry Martin'
+    ],
+    content: `<p>
+                Before Mark Mothersbaugh took over, Jerry was tasked with producing a set of tracks in a <strong>style
+                reminiscent of his earlier work</strong> for The Sims. It is speculated that these tracks were employed
+                in builds of The Sims 2 as recent as <strong>October 2003</strong>
+              </p>
+              <p>
+                These compositions were initially accessible on Jerry's website, Jerry Martin Music, but have since
+                become inaccessible <strong>unless the correct URL is known</strong>. Due to the dedicated efforts of
+                our team, there is now no need for any guesswork!
+              </p>
+              <p>
+                The objective of this album is to compile all these previously unused tracks into a single release for
+                your listening enjoyment. Each track has been <strong>appropriately tagged and adorned with custom
+                artwork</strong> for your pleasure.
+              </p>`,
+    links: [
+      {
+        // eslint-disable-next-line max-len
+        url: 'https://archive.org/compress/the-sims-2-pre-release-sampler-soundtrack/formats=MPEG-4%20AUDIO&file=/the-sims-2-pre-release-sampler-soundtrack.zip',
+        name: 'M4A 44.1 KHZ'
+      }
+    ],
+    iframe: 'https://archive.org/embed/the-sims-2-pre-release-sampler-soundtrack&playlist=1&list_height=720',
+    discs: [
+      [
+        'Neighborhood 2',
+        'Upper Crust',
+        'Big Breeze',
+        'Blind Optimism',
+        'Oh My God',
+        'Sweetness'
+      ]
+    ]
+  }
+].reverse();
+
+const upcomingReleasesData = [
+  {
+    slug: 'sims-the-ultimate-original-collection',
+    title: 'The Sims: The Ultimate Original Soundtrack Collection',
+    artist: 'Various Artists',
+    progress: 74
+  },
+  {
+    slug: 'sims-bustin-out',
+    title: 'The Sims: Bustin\' Out Original Soundtrack',
+    artist: 'Various Artists',
+    progress: 47
+  },
+  {
+    slug: 'sims-urbz-sims-in-the-city',
+    title: 'The Urbz: Sims in the City Original Soundtrack',
+    artist: 'Various Artists',
+    progress: 10
   }
 ];
 
-export default releasesData;
+export { releasesData, upcomingReleasesData };
