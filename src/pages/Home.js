@@ -2,6 +2,7 @@ import React from 'react';
 
 import SEO from '../utils/SEO';
 import UpcomingReleases from '../components/UpcomingReleases';
+import AboutProjectCard from '../components/AboutProjectCard';
 
 const Home = () => {
   return (
@@ -9,6 +10,7 @@ const Home = () => {
       <SEO />
       Welcome Home!
       <UpcomingReleases />
+      <AboutProjectCard />
     </>
   );
 };

@@ -5,7 +5,7 @@ import { upcomingReleasesData } from '../SMAData';
 const UpcomingReleases = () => {
   return (
     <section id="upcoming-releases">
-      <h2 className="mb-3">Upcoming releases</h2>
+      <h2 className="mt-5 mb-4">Upcoming releases</h2>
       <div className="row gx-3 row-gap-3">
         {upcomingReleasesData.map((soundtrack, index) => (
           <div key={index} className="col-12 col-md-4">
