@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Release from './pages/Release';
 import Releases from './pages/Releases';
+import FAQs from './pages/FAQs';
 import NotFound from './pages/NotFound';
 
 const App = () => {
@@ -22,6 +23,7 @@ const App = () => {
             <Route index element={<Releases />} />
             <Route path=":slug" element={<Release />} />
           </Route>
+          <Route path="/faqs" element={<FAQs />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>

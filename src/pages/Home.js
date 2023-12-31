@@ -5,11 +5,11 @@ import UpcomingReleases from '../components/UpcomingReleases';
 
 const Home = () => {
   return (
-    <div>
+    <>
       <SEO />
       Welcome Home!
       <UpcomingReleases />
-    </div>
+    </>
   );
 };
 

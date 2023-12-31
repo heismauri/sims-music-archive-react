@@ -20,7 +20,7 @@ const UpcomingReleases = () => {
                   <h6 className="fw-light text-muted m-0">{soundtrack.artist}</h6>
                 </div>
               </div>
-              <p className="fw-light text-muted my-1"><small>Current progress...</small></p>
+              <p className="fw-light text-muted opacity-75 mb-1 mt-2"><small>Current progress...</small></p>
               <div className="progress" style={{ height: '10px' }}>
                 <div className="progress-bar rounded-5 bg-primary" role="progressbar"
                   aria-valuemin="0" aria-valuemax="100"
