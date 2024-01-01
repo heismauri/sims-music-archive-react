@@ -7,10 +7,14 @@ img {
   height: auto;
 }
 
+hr {
+  border-top: 2px dashed !important;
+}
+
 .bg-light-gray {
   background-color: $light-gray !important;
 }
 
-hr {
-  border-top: 2px dashed !important;
+.filter-grayscale {
+  filter: grayscale(100%) !important;
 }

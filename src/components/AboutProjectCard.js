@@ -7,7 +7,7 @@ const AboutProjectCard = () => {
     <section id="about-project">
       <h2 className="mt-5 mb-4">About the Project</h2>
       <div className="about-project-card row rounded-5 mx-0 row-gap-3 justify-content-center">
-        <div className="about-project-card__body col order-2 order-md-1 p-0">
+        <div className="about-project-card__body col-12 col-md order-2 order-md-1 p-0">
           <p>
             We are a team of <strong>passionate</strong> fans of The Sims franchise, especially its dedication to
             producing spectacular soundtracks full of all sorts of genres from <strong>Jazz to Reggae</strong>. It truly
@@ -23,7 +23,7 @@ const AboutProjectCard = () => {
           </p>
         </div>
         <div className="about-project-card__image position-relative col-auto order-1">
-          <img src={businessSim} alt="Business Sim" />
+          <img src={businessSim} alt="Business Sim" width="320" />
         </div>
       </div>
     </section>

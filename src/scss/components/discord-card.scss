@@ -1,0 +1,50 @@
+#discord-area {
+  .discord-card {
+    background-color: #663AF6;
+    padding: 2rem;
+
+    .discord-card__image {
+
+      &::after {
+        content: '';
+        width: 100%;
+        background: linear-gradient(0deg, rgb(102, 58, 246) 0%, rgba(255, 255, 255, 0) 70%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: -1px;
+      }
+
+      @media (min-width: 768px) {
+        img {
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: -2rem;
+        }
+
+        &::after {
+          bottom: -2rem;
+        }
+      }
+      @media (max-width: 767.999px) {
+        img {
+          margin-top: -3rem;
+        }
+      }
+    }
+  }
+
+  .missing-titles {
+    padding: 0 2rem;
+
+    > * {
+      max-width: 16rem;
+    }
+
+    img {
+      pointer-events: none;
+    }
+  }
+}
