@@ -164,7 +164,7 @@ const soundtracksData = [
       ]
     ]
   }
-];
+].reverse();
 
 const upcomingReleasesData = [
   {
@@ -195,7 +195,7 @@ const soundtracksGroupedByCategoryData = soundtracksData.reduce((accumulator, cu
   return accumulator;
 }, {});
 
-const latestRelease = [...soundtracksData].reverse().find((release) => release.category === 'release');
+const latestRelease = soundtracksGroupedByCategoryData.release[0];
 
 export {
   soundtracksData, soundtracksGroupedByCategoryData, latestRelease, upcomingReleasesData

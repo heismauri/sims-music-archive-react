@@ -15,7 +15,7 @@ const Releases = () => {
         soundtracks which we will release publicly as soon as they are complete.
       </p>
       <div className="row row-gap-3 gx-3">
-        {[...soundtracksGroupedByCategoryData.release].reverse().map((release, index) => (
+        {soundtracksGroupedByCategoryData.release.map((release, index) => (
           <Link to={release.slug} key={index} className="col-12 col-md-6 text-decoration-none">
             <div className="release__card d-flex p-4 gap-3 rounded-5 align-items-center">
               <img src={`/images/albums/${release.slug}.png`} width="150" alt={release.title} className="rounded-2" />
@@ -33,7 +33,7 @@ const Releases = () => {
         content for future reference.
       </p>
       <div className="row row-gap-3 gx-3">
-        {[...soundtracksGroupedByCategoryData.miscellaneous].reverse().map((release, index) => (
+        {soundtracksGroupedByCategoryData.miscellaneous.map((release, index) => (
           <Link to={release.slug} key={index} className="col-12 col-md-6 text-decoration-none">
             <div className="release__card d-flex p-4 gap-3 rounded-5 align-items-center">
               <img src={`/images/albums/${release.slug}.png`} width="150" alt={release.title} className="rounded-2" />
