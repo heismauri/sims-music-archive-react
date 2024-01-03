@@ -1,10 +1,11 @@
-const releasesData = [
+const soundtracksData = [
   {
     slug: 'urbz-sims-in-the-city-handheld',
     title: 'The Urbz: Sims in the City ~Handheld Version~ (Original Soundtrack)',
     artists: [
       'Ian Stocker'
     ],
+    category: 'release',
     content: `<p>
                 This is the complete soundtrack for the handheld versions of The Urbz: Sims in the City whichoriginally
                 appeared on <strong>Nintendo Game Boy Advance</strong> & <strong>Nintendo DS</strong> and were developed
@@ -93,11 +94,42 @@ const releasesData = [
     ]
   },
   {
+    slug: 'jerry-martin-music-vault',
+    title: 'Jerry Martin Music Vault',
+    artists: [
+      'Jerry Martin'
+    ],
+    category: 'miscellaneous',
+    content: `<p>
+                <strong>Jerry Martin Music</strong> (JMM) stands as a dedicated website crafted to showcase Jerry's
+                exceptional musical talent, offering a compelling portfolio for organizations seeking commissioned work.
+                While the website prominently features links to full versions and excerpts of his <strong>notable
+                contributions</strong> to The Sims franchise, it only scratches the surface of the <strong>extensive
+                musical repertoire</strong> tucked away behind the scenes.
+              </p>
+              <p>
+                This page serves as an exclusive gateway, meticulously <strong>collating and archiving</strong> the
+                entirety of Jerry's musical creations. Unveiling a hidden treasure trove, it brings forth a
+                comprehensive collection that goes beyond what meets the eye on the website's frontend. Explore the
+                richness of Jerry Martin's musical world in one centralized space, inviting you to <strong>discover the
+                full spectrum</strong> of his artistic brilliance.
+              </p>`,
+    links: [
+      {
+        url: 'https://archive.org/compress/jmm-vault/formats=MPEG4&file=/jmm-vault.zip',
+        name: 'MP4 VBR'
+      }
+    ],
+    iframe: 'https://archive.org/embed/jmm-vault&playlist=1&list_height=720',
+    discs: []
+  },
+  {
     slug: 'sims-two-pre-release-sampler',
     title: 'The Sims 2 Pre-Release Sampler Soundtrack',
     artists: [
       'Jerry Martin'
     ],
+    category: 'miscellaneous',
     content: `<p>
                 Before Mark Mothersbaugh took over, Jerry was tasked with producing a set of tracks in a <strong>style
                 reminiscent of his earlier work</strong> for The Sims. It is speculated that these tracks were employed
@@ -155,4 +187,16 @@ const upcomingReleasesData = [
   }
 ];
 
-export { releasesData, upcomingReleasesData };
+const soundtracksGroupedByCategoryData = soundtracksData.reduce((accumulator, currentValue) => {
+  if (!accumulator[currentValue.category]) {
+    accumulator[currentValue.category] = [];
+  }
+  accumulator[currentValue.category].push(currentValue);
+  return accumulator;
+}, {});
+
+const latestRelease = [...soundtracksData].reverse().find((release) => release.category === 'release');
+
+export {
+  soundtracksData, soundtracksGroupedByCategoryData, latestRelease, upcomingReleasesData
+};

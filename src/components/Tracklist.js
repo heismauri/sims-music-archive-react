@@ -10,7 +10,7 @@ const Tracklist = ({ discs }) => {
   };
 
   return (
-    <div id="release__tracklist" className="bg-black text-white rounded-5 p-4">
+    <div id="release__tracklist" className="bg-black text-white rounded-5 p-4 mt-5">
       {discs.length > 1
         && <div className="release__tracklist-selector mb-4">
           {discs.map((_, index) => (

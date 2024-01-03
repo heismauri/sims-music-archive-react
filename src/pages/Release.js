@@ -8,11 +8,11 @@ import ArtistName from '../utils/ArtistName';
 import Tracklist from '../components/Tracklist';
 import ReleaseLink from '../components/ReleaseLink';
 
-import { releasesData } from '../SMAData';
+import { soundtracksData } from '../SMAData';
 
 const Release = () => {
   const { slug } = useParams();
-  const release = releasesData.find((r) => r.slug === slug);
+  const release = soundtracksData.find((r) => r.slug === slug);
   if (!release) {
     return <NotFound />;
   }
@@ -35,7 +35,7 @@ const Release = () => {
           </div>
         </div>
       </div>
-      <div className="row gx-3 row-gap-3 mb-5">
+      <div className="row gx-3 row-gap-3">
         <div className="col-md-6">
           <div className="row row-gap-3">
             {release.links.map((link, index) => (
@@ -52,7 +52,9 @@ const Release = () => {
           ></iframe>
         </div>
       </div>
-       <Tracklist discs={release.discs} />
+        {release.discs.length >= 1 && (
+          <Tracklist discs={release.discs} />
+        )}
     </div>
   );
 };
