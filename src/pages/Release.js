@@ -8,11 +8,11 @@ import ArtistName from '../utils/ArtistName';
 import Tracklist from '../components/Tracklist';
 import ReleaseLink from '../components/ReleaseLink';
 
-import { soundtracksData } from '../SMAData';
+import { allReleases } from '../SMAData';
 
 const Release = () => {
   const { slug } = useParams();
-  const release = soundtracksData.find((r) => r.slug === slug);
+  const release = allReleases.find((r) => r.slug === slug);
   if (!release) {
     return <NotFound />;
   }

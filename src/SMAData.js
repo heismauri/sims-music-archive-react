@@ -1,4 +1,4 @@
-const soundtracksData = [
+const allReleases = [
   {
     slug: 'urbz-sims-in-the-city-handheld',
     title: 'The Urbz: Sims in the City ~Handheld Version~ (Original Soundtrack)',
@@ -166,7 +166,7 @@ const soundtracksData = [
   }
 ].reverse();
 
-const upcomingReleasesData = [
+const upcomingReleases = [
   {
     slug: 'sims-the-ultimate-original-collection',
     title: 'The Sims: The Ultimate Original Soundtrack Collection',
@@ -187,7 +187,7 @@ const upcomingReleasesData = [
   }
 ];
 
-const soundtracksGroupedByCategoryData = soundtracksData.reduce((accumulator, currentValue) => {
+const releasesGroupedByCategory = allReleases.reduce((accumulator, currentValue) => {
   if (!accumulator[currentValue.category]) {
     accumulator[currentValue.category] = [];
   }
@@ -195,8 +195,8 @@ const soundtracksGroupedByCategoryData = soundtracksData.reduce((accumulator, cu
   return accumulator;
 }, {});
 
-const latestRelease = soundtracksGroupedByCategoryData.release[0];
+const latestRelease = releasesGroupedByCategory.release[0];
 
 export {
-  soundtracksData, soundtracksGroupedByCategoryData, latestRelease, upcomingReleasesData
+  allReleases, latestRelease, upcomingReleases, releasesGroupedByCategory
 };

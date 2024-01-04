@@ -1,13 +1,13 @@
 import React from 'react';
 
-import { upcomingReleasesData } from '../SMAData';
+import { upcomingReleases } from '../SMAData';
 
 const UpcomingReleases = () => {
   return (
     <section id="upcoming-releases">
       <h2 className="mt-5 mb-4">Upcoming releases</h2>
       <div className="row gx-3 row-gap-3">
-        {upcomingReleasesData.map((soundtrack, index) => (
+        {upcomingReleases.map((soundtrack, index) => (
           <div key={index} className="col-12 col-md-4">
             <div className="upcoming-release__card bg-light-gray p-4 rounded-4">
               <div className="row gx-3">
