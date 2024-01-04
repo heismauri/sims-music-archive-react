@@ -17,13 +17,18 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <NavLink className="nav-link fw-bolder px-4" to="/">Home</NavLink>
+              <NavLink className="nav-link fw-bolder px-4" to="/faqs">FAQs</NavLink>
             </li>
             <li className="nav-item">
               <NavLink className="nav-link fw-bolder px-4" to="/releases">Releases</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link fw-bolder px-4" to="/faqs">FAQs</NavLink>
+              <a href="https://docs.google.com/spreadsheets/d/1SicF1MsCvRM8Rwa8nuDLK4SunKjPBWB2Mw2wSgPfJ8I/view"
+                target="_blank" rel="noreferrer" className="nav-link fw-bolder px-4">Music Database</a>
+            </li>
+            <li className="nav-item">
+              <a href="https://discord.gg/r5DNAywy7m" target="_blank" rel="noreferrer"
+                className="nav-link fw-bolder px-4">Discord</a>
             </li>
           </ul>
         </div>
