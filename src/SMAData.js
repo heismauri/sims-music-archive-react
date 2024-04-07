@@ -276,19 +276,49 @@ const upcomingReleases = [
     slug: 'sims-the-ultimate-original-collection',
     title: 'The Sims: The Ultimate Original Soundtrack Collection',
     artist: 'Various Artists',
-    progress: 74
+    progress: 74.4,
+    url: 'https://docs.google.com/spreadsheets/d/1SicF1MsCvRM8Rwa8nuDLK4SunKjPBWB2Mw2wSgPfJ8I/view#gid=0'
   },
   {
     slug: 'sims-bustin-out',
     title: 'The Sims: Bustin\' Out Original Soundtrack',
     artist: 'Various Artists',
-    progress: 47
+    progress: 42.1,
+    url: 'https://docs.google.com/spreadsheets/d/1SicF1MsCvRM8Rwa8nuDLK4SunKjPBWB2Mw2wSgPfJ8I/view#gid=1241287335'
   },
   {
     slug: 'sims-urbz-sims-in-the-city',
     title: 'The Urbz: Sims in the City Original Soundtrack',
     artist: 'Various Artists',
     progress: 10
+  },
+  {
+    slug: 'sims-online',
+    title: 'The Sims Online Original Soundtrack',
+    artist: 'Various Artists',
+    progress: 72,
+    url: 'https://docs.google.com/spreadsheets/d/1SicF1MsCvRM8Rwa8nuDLK4SunKjPBWB2Mw2wSgPfJ8I/view#gid=1626271820'
+  },
+  {
+    slug: 'simcity-3000',
+    title: 'SimCity 3000 Original Soundtrack',
+    artist: 'Various Artists',
+    progress: 65.2,
+    url: 'https://docs.google.com/spreadsheets/d/1SicF1MsCvRM8Rwa8nuDLK4SunKjPBWB2Mw2wSgPfJ8I/view#gid=1241287335'
+  },
+  {
+    slug: 'simcity-4',
+    title: 'SimCity 4 Original Soundtrack',
+    artist: 'Various Artists',
+    progress: 77.8,
+    url: 'https://docs.google.com/spreadsheets/d/1SicF1MsCvRM8Rwa8nuDLK4SunKjPBWB2Mw2wSgPfJ8I/view#gid=189408092'
+  },
+  {
+    slug: 'spore',
+    title: 'Spore Original Soundtrack',
+    artist: 'Various Artists',
+    progress: 66.4,
+    url: 'https://docs.google.com/spreadsheets/d/1SicF1MsCvRM8Rwa8nuDLK4SunKjPBWB2Mw2wSgPfJ8I/view#gid=166140390'
   }
 ];
 

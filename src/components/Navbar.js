@@ -5,7 +5,7 @@ import logo from '../assets/logo.webp';
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-sm fs-5 mb-3">
+    <nav className="navbar navbar-expand-md fs-5 mb-3">
       <div className="container justify-content-start">
         <button className="navbar-toggler border-0 p-2 me-2" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

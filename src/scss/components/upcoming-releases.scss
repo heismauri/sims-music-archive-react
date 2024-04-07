@@ -1,5 +1,13 @@
 #upcoming-releases {
   .upcoming-release__card {
+    color: $black;
+    border: 0.2rem solid $light-gray;
+    transition: border-color 0.2s ease-in-out;
+
+    &:hover {
+      color: $primary;
+      border-color: $primary;
+    }
     h5 {
       display: -webkit-box;
       -webkit-line-clamp: 2;
