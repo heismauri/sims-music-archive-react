@@ -6,6 +6,7 @@ const allReleases = [
       'Ian Stocker'
     ],
     category: 'release',
+    year: 2023,
     content: `<p>
                 This is the complete soundtrack for the handheld versions of The Urbz: Sims in the City whichoriginally
                 appeared on <strong>Nintendo Game Boy Advance</strong> & <strong>Nintendo DS</strong> and were developed
@@ -100,6 +101,7 @@ const allReleases = [
       'Jerry Martin'
     ],
     category: 'miscellaneous',
+    year: 2023,
     content: `<p>
                 <strong>Jerry Martin Music</strong> (JMM) stands as a dedicated website crafted to showcase Jerry's
                 exceptional musical talent, offering a compelling portfolio for organizations seeking commissioned work.
@@ -130,6 +132,7 @@ const allReleases = [
       'Jerry Martin'
     ],
     category: 'miscellaneous',
+    year: 2024,
     content: `<p>
                 Before Mark Mothersbaugh took over, Jerry was tasked with producing a set of tracks in a <strong>style
                 reminiscent of his earlier work</strong> for The Sims. It is speculated that these tracks were employed
@@ -161,6 +164,108 @@ const allReleases = [
         'Blind Optimism',
         'Oh My God',
         'Sweetness'
+      ]
+    ]
+  },
+  {
+    slug: 'the-sims-bustin-out-handheld',
+    title: 'The Sims: Bustin\' Out ~Handheld Version~ (Original Soundtrack)',
+    artists: [
+      'Ian Stocker'
+    ],
+    category: 'release',
+    year: 2024,
+    content: `<p>
+                This is the complete soundtrack for the handheld versions of The Sims: Bustin' Out which originally
+                appeared on <strong>Nintendo Game Boy Advance</strong> & <strong>Nokia N-Gage</strong> and were
+                developed by <strong>Griptonite Games</strong>.
+              </p>
+              <p>
+                The tracks featured in this release have been taken from their <strong>source recordings</strong>,
+                remastered and correctly tagged so that they maintain the <strong>highest quaity possible</strong>.
+              </p>
+              <p>
+                We would like to thank our generous anonymous donor for providing us with the resources to make this
+                release possible.
+              </p>`,
+    links: [
+      {
+        // eslint-disable-next-line max-len
+        url: 'https://archive.org/compress/the-sims-bustin-out-handheld-original-soundtrack/formats=24BIT%20FLAC&file=/the-sims-bustin-out-handheld-original-soundtrack.zip',
+        name: 'FLAC 24BIT 48KHZ'
+      },
+      {
+        // eslint-disable-next-line max-len
+        url: 'https://archive.org/compress/the-sims-bustin-out-handheld-original-soundtrack/formats=VBR%20MP3&file=/the-sims-bustin-out-handheld-original-soundtrack.zip',
+        name: 'MP3 V0 VBR'
+      }
+    ],
+    iframe: 'https://archive.org/embed/the-sims-bustin-out-handheld-original-soundtrack&playlist=1&list_height=720',
+    discs: [
+      [
+        'Title (That\'s Hot Remix)',
+        'Create-a-Sim (Oh Sims Remix)',
+        'SimValley - East (Build/Buy Mode #3 Remix)',
+        'Burning Spoke Biker Bar / Smoothie Slider / Metal',
+        'Burning Spoke Biker Bar / Oldies',
+        'General Store (Mall Rat / Let\'s Go Shopping Remix)',
+        'Flex-Dome Fitness Center / Credits',
+        'SimValley General Hospital (If You Really See Eurydice / Cascade Bubbler Remix)',
+        'VirtuChem Labs',
+        'SimValley Jail / RnB',
+        'Pet Pals Animal Shelter / Restroom (The Simple Life Remix)',
+        'Cheatum and Howe\'s Retail Store (Simbuy Remix)',
+        'Giuseppi Mezzoalto\'s Theme (Now Entering Remix)',
+        'SimValley - Docks & South (Groceries Remix)',
+        'Public Library / Nicki Knacks\' Bric-a-Brac (Under Construction / New Beginnings Remix)',
+        'Club Rubb / Hip-Hop',
+        'Club Rubb / Techno (Superstar Remix)',
+        'Disco',
+        'Rock',
+        'Country Café',
+        'Dockside Dinner',
+        'Paradise Island (BoSim Nova - Wet Your Whistle Remix)',
+        'SimValley Sewers',
+        'Haunted Shack',
+        'Into the Rocket',
+        'TV - Action',
+        'TV - Horror',
+        'TV - Romance'
+      ],
+      [
+        'Mower Madness (Mall Rat - Let\'s Go Shopping Remix)',
+        'Auction Time!',
+        'Auction Time! - Winning Bid (Jingle)',
+        'Auction Time! - Losing Bid (Jingle)',
+        'Bait Flinger - Reel It In (Jingle)',
+        'Bait Flinger - Small Catch (Jingle)',
+        'Bait Flinger - Medium Catch (Jingle)',
+        'Bait Flinger - Large Catch (Jingle)',
+        'Bait Flinger - Shark! (Jingle)',
+        'Guitar Practice',
+        'Jam Session 1',
+        'Jam Session 2',
+        'Jam Session 3',
+        'Jam Session 4',
+        'Jam Session 5',
+        'Pizza Pandemonium - Success (Jingle)',
+        'Powerlifter - Start (Jingle)',
+        'Powerlifter - Success (Jingle)',
+        'Powerlifter - Fail (Jingle)',
+        'Petri Dish',
+        'Petri Dish - Win (Jingle)',
+        'Petri Dish - Complete (Jingle)',
+        'Petri Dish - Game Over (Jingle)',
+        'Goal Complete (Jingle)',
+        'Mission Complete (Jingle)',
+        'Promotion (Jingle)',
+        'Gain Skill Point (Jingle)',
+        'Passed Out (Jingle)',
+        'Break Appliance (Unused Jingle)',
+        'Learn New Social (Unused Jingle)',
+        'Unlock Area (Unused Jingle)',
+        'Unlock Item (Unused Jingle)',
+        'Bait Flinger (Unused Jingle)'
       ]
     ]
   }

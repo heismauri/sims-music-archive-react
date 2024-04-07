@@ -18,10 +18,11 @@ const Releases = () => {
         {releasesGroupedByCategory.release.map((release, index) => (
           <Link to={release.slug} key={index} className="col-12 col-md-6 text-decoration-none">
             <div className="release__card d-flex p-4 gap-3 rounded-5 align-items-center">
-              <img src={`/images/albums/${release.slug}.png`} width="150" alt={release.title} className="rounded-2" />
+              <img src={`/images/releases/${release.slug}.png`} width="150" alt={release.title} className="rounded-2" />
               <div>
                 <h5 className="m-0 mb-2">{release.title}</h5>
                 <p className="m-0">by {ArtistName(release.artists)}</p>
+                <p className="m-0"><small>{release.year}</small></p>
               </div>
             </div>
           </Link>
@@ -36,10 +37,11 @@ const Releases = () => {
         {releasesGroupedByCategory.miscellaneous.map((release, index) => (
           <Link to={release.slug} key={index} className="col-12 col-md-6 text-decoration-none">
             <div className="release__card d-flex p-4 gap-3 rounded-5 align-items-center">
-              <img src={`/images/albums/${release.slug}.png`} width="150" alt={release.title} className="rounded-2" />
+              <img src={`/images/releases/${release.slug}.png`} width="150" alt={release.title} className="rounded-2" />
               <div>
                 <h5 className="m-0 mb-2">{release.title}</h5>
                 <p className="m-0">by {ArtistName(release.artists)}</p>
+                <p className="m-0"><small>{release.year}</small></p>
               </div>
             </div>
           </Link>

@@ -12,8 +12,8 @@ const UpcomingReleases = () => {
             <div className="upcoming-release__card bg-light-gray p-4 rounded-4">
               <div className="row gx-3">
                 <div className="col-auto">
-                  <img src={`/images/albums/${soundtrack.slug}.png`} alt={soundtrack.title} className="rounded-4"
-                    width="70" />
+                  <img src={`/images/upcoming-releases/${soundtrack.slug}.png`} alt={soundtrack.title}
+                    className="rounded-4" width="70" />
                 </div>
                 <div className="col">
                   <h5 className="m-0">{soundtrack.title}</h5>
